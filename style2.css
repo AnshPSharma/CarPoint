@@ -1,0 +1,53 @@
+
+body {
+  color: #333; 
+  background-color: #f4f4f9;
+  background-image: url(img/For\ background\ image\ for\ 2nd\ css.webp);
+  background-size: cover;
+  background-attachment: fixed; 
+  background-position: center; 
+  font-family: 'Arial', sans-serif; 
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  text-align: center;
+  width: 80%;
+  max-width: 1200px;
+  margin: 2rem auto; 
+  background-color: rgba(255, 255, 255, 0.9); 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+  padding: 2rem;
+  border-radius: 12px; 
+}
+
+h1, h2 {
+  text-transform: uppercase;
+  font-weight: 700; 
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.5rem; 
+  margin-bottom: 1.5rem;
+  background-color: #ffeb3b;
+  color: #333; 
+  padding: 1rem 1.5rem; 
+  border-radius: 12px; 
+}
+
+h2 {
+  font-size: 1.75rem; 
+  background-color: #87cefa;
+  color: #333;
+  padding: 0.5rem 1rem; 
+  border-radius: 8px; 
+
+p {
+  color: #e74c3c; 
+  text-align: center;
+  font-size: 1.15em;
+  line-height: 1.6; 
+}
+}

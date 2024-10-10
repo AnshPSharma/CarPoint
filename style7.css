@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-padding-top: 1rem;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #d90429;
+  --text-color: #f4f1f4;
+  --bg-color: #fff;
+}
+
+html::-webkit-scrollbar {
+  width: 0.5rem;
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  border-radius: 5rem;
+  background: var(--text-color);
+}
+
+body {
+    color: var(--text-color);
+    background: url('data:image/jpeg;base64,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') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+section {
+  padding: 8rem 0 3rem; 
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  color: var(--text-color);
+}
+
+
+/* Ensure the .box container has relative positioning */
+.box {
+    position: relative;
+    height: 200px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    width: 300px;
+    background: rgba(0, 0, 0, 0.7);
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  
+  .box h2 {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    font-weight: 400;
+    font-size: 1rem;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 8px;
+    border-radius: 0.5rem;
+  }
+  /* Button styling */
+  .add-to-cart {
+   
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    padding: 10px 15px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background 0.3s;
+  }
+  
+  .box .add-to-cart-btn:hover {
+    background: #d90429; /* Slightly darker shade on hover */
+  }
+  
+  .box img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+  
+  .box:hover h2 {
+    background: var(--main-color);
+    color: var(--bg-color);
+  }
+  
+  .cars-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between items */
+    justify-content: space-between;
+  }
+  
+  
+.container {
+  max-width: 1068px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  display: block;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+header.shadow {
+  background: var(--bg-color);
+  box-shadow: 4px 4px 20px rgb(15 54 55 / 10%);
+  transition: 0.5s ease;
+}
+
+header.shadow #search-icon {
+  color: var(--text-color);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 35px;
+}
+
+#menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--text-color);
+  display: none;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.logo span {
+  color: var(--main-color);
+}
+
+.navbar {
+  display: flex;
+  column-gap: 2rem;
+}
+
+.navbar a {
+  color: var(--text-color);
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.navbar a:hover,
+.navbar .active {
+  color: var(--main-color);
+  border-bottom: 3px solid var(--main-color);
+}
+
+#search-icon {
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--bg-color);
+}
+
+.search-box {
+  position: absolute;
+  top: 110%;
+  right: 0;
+  left: 0;
+  background: var(--bg-color);
+  box-shadow: 4px 4px 20px rgb(15 54 55 / 10%);
+  border: 1px solid var(--main-color);
+  border-radius: 0.5rem;
+  clip-path: circle(0% at 100% 0%);
+}
+
+.search-box.active {
+  clip-path: circle(144% at 100% 0%);
+  transition: 0.4s;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 20px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 1rem;
+}
+.cars-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Centering cars-container */
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.cars-container a {
+  flex: 1 1 30%;
+  text-decoration: none;
+}
+
+.cars-container .box {
+    position: relative;
+    height: 200px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    width: 300px;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cars-container .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  
+  .cars-container .box h2 {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    font-weight: 400;
+    font-size: 1rem;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 8px;
+    border-radius: 0.5rem;
+  }
+  
+  .cars-container .box .add-to-cart-btn {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    padding: 10px 15px;
+    background: var(--main-color);
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background 0.3s;
+  }
+  
+  .cars-container .box .add-to-cart-btn:hover {
+    background: #d90429; /* Slightly darker shade on hover */
+  }
+  
+.cars-container .box img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+
+.cars-container .box:hover h2 {
+  background: var(--main-color);
+  color: var(--bg-color);
+}
+/* Default state - dropdown hidden */
+.dropdown-content {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0s 0.5s;
+  
+    /* Positioning the dropdown below the box */
+    top: 100%; /* Pushes the dropdown just below the box */
+    left: 0;
+    z-index: 1;
+  }
+  
+  /* When hovered - dropdown visible */
+  .box:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease, ;
+  }
+  
+  /* Fade-out class - for hiding after 5 seconds */
+  .dropdown-content.fade-out {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0s 0.5s;
+  }
+  
+  
+
+@media (max-width: 768px) {
+  .navbar {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 200;
+    transition: 0.5s;
+  }
+
+  .navbar.active {
+    top: 0;
+  }
+
+  .navbar a {
+    margin: 1.5rem 0;
+  }
+
+  #menu-icon {
+    display: block;
+  }
+}
